@@ -44,3 +44,49 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .side-nav{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: blue;
+    
+  }
+
+  header{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: chartreuse;
+  }
+
+.header-top , .header-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-top div, .header-bottom div{
+    display: flex;
+  }
+
+  main{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: brown;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: chocolate;
+  }
+
+  aside{
+    background-color: cornflowerblue;
+  }
+
+
